@@ -1,0 +1,7 @@
+<div class="container" *ngIf = 'myblog'>
+    <!-- <p>{{myblog.changingThisBreaksApplicationSecurity.blog.innerhtml}}</p> -->
+    <div class="mydata" [innerHtml]='mysafehtml'></div>
+    <div class="author"><h6></h6></div>
+    <div class="time"><h6></h6></div>
+    <div class="save"><button class="btn btn-outline-primary" (click)='savedblog(myblog.blog._id)'>Save Article</button></div>
+</div>

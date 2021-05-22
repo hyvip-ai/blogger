@@ -1,0 +1,23 @@
+<div class="mymsg" *ngIf='messege'><h1>{{messege.messege}}</h1></div>
+
+<div class="container">
+    <div class="row justify-content-between">
+        <div class="col-5  des">
+            <h2>Welcome To The Simple Blogging Website</h2>
+            <p>There are many features that I already added,and there will be many more which I will be adding so let's hope for the best.</p>
+        </div>
+        <div class="col-5">
+            <form class="form-floating" [formGroup]='loginform'>
+                <div class="form-floating mb-3">
+                    <input type="email" formControlName='email' class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" formControlName='password' class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <div><button class="btn btn-success" (click)='login()' [disabled] = '!loginform.valid'>Login</button><button class="btn btn-info" (click)='gotoregister()'>Go To Register</button></div>
+              </form>
+        </div>
+    </div>
+</div>

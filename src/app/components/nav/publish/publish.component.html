@@ -1,0 +1,28 @@
+
+
+
+<div class="container datainput">
+  <form [formGroup]='myform'>
+  	<angular-editor formControlName = 'myhtml' [placeholder]="'Enter text here...'" [(ngModel)]="blogdata" [config]="editorConfig"></angular-editor>
+  </form>
+</div>
+
+<div class="Submit container">
+     <div class="row">
+      <div class="col-12"><button class="btn btn-outline-success" (click)='publish()'>Submit Article</button></div>
+    </div>
+  </div>
+
+
+  <div class="container">
+ 
+
+<h2>Html Output</h2>
+
+{{blogdata}}
+</div>
+
+
+
+
+

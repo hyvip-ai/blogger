@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "blogging"
+  "defaultProject": "blogging",
+  "cli": {
+    "analytics": "bcd1645d-9976-4f70-b064-d6e0f007a901"
+  }
 }

@@ -1,0 +1,21 @@
+<div class="outer" *ngIf = 'myblogs'>
+<div class="container article" *ngFor = 'let item of myblogs.publish;index as i'>
+    <div class="examplearticle">
+        <div class="card">
+            
+            <div class="card-body">
+            
+              <div [innerHtml] = 'item.innerhtml' class="mydata"></div>
+              <button class="btn btn-success mybtns" (click)='readmore(item._id)'>Read More</button><button class="mybtns btn btn-primary" (click)='edit(item._id)'>Edit</button><button class="mybtns btn btn-danger" (click)='deletearticle(item._id)'>Delete</button>
+            </div>
+            <div class="card-footer">
+              <div class="row justify-content-between">
+                <div class="col-5">{{item.username}}</div>
+                <div class="col-5"> {{item.createdat}}</div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+</div>
+</div>

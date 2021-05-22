@@ -1,0 +1,29 @@
+
+.author,.time{
+    width: 100%;
+    text-align: right;
+    margin: 20px auto;
+}
+.save{
+    width: 100%;
+}
+button{
+    display: block;
+    width: 40%;
+    margin: 30px auto;
+}
+h1{
+    text-align:center;
+}
+.subheading{
+    text-align:center
+}
+.middle{
+    text-align:center;
+}
+.right{
+    text-align:right;
+}
+
+
+

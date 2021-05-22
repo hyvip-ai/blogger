@@ -1,0 +1,59 @@
+.des h2{
+    margin-bottom: 35px;
+    padding-top: 100px;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight:bolder;
+    color:royalblue;
+    text-align: center;
+}
+.des p{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(14,14,14);
+}
+
+button{
+    display:block;
+    width:40%;
+    margin: 20px auto;
+    box-shadow: none;
+
+}
+
+button:focus{
+    box-shadow: none;
+    outline: none;
+}
+.mymsg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: seagreen;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+}
+
+.container{
+    /* border:2px solid black; */
+    margin-top: 150px;
+
+}
+input{
+    margin: 20px auto;
+    display: block;
+    border: none;
+    border-bottom: 2px solid black;
+}
+input:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 2px solid black;
+}

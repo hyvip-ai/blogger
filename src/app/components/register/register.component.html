@@ -1,0 +1,33 @@
+<h2 *ngIf='mymessege' class="mymsg">{{mymessege.messege}}</h2>
+
+<div class="container">
+    <div class="row justify-content-between">
+    <div class="col-5 des">
+        <h2>Welcome To The Simple Blogging Website</h2>
+        <p>There are many features that I already added,and there will be many more which I will be adding so let's hope for the best.</p>
+    </div>
+    <div class="col-5">
+        
+        <form class="form-floating" [formGroup]='registrationform'>
+            <h2>Registration Form</h2>
+            <div class="form-floating">
+                <input formControlName = 'name' type="text" class="form-control" id="floatingname" placeholder="Name">
+                <label for="floatingname">Name</label>
+              </div>
+              <div class="form-floating">
+                <input formControlName = 'username' type="text" class="form-control" id="floatingusername" placeholder="Username">
+                <label for="floatingusername">Username</label>
+              </div>
+            <div class="form-floating">
+                <input formControlName = 'email' type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input formControlName = 'password' type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <div><button class="btn btn-success" [disabled]='!registrationform.valid' (click)='Submit()'>Register</button><button class="btn btn-info" (click)='gotologin()'>Go To Login</button></div>
+          </form>
+        </div>
+    </div>
+</div>

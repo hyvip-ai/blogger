@@ -1,0 +1,21 @@
+
+.Submit{
+    padding: 25px;
+    margin:25px auto; 
+
+}
+.Submit button{
+    display: block;
+    margin:10px auto;
+    width: 40%;
+}
+.datainput{
+    margin-top: 80px;
+
+}
+
+.angular-editor{
+    width: 100%;
+    height: auto;
+    overflow: hidden;;
+}

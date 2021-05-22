@@ -1,0 +1,27 @@
+<div class="container" *ngIf='mydata'>
+
+<div class="card text-center" >
+    <div class="card-header">
+    <h1>Dashboard</h1>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Welcome , <b>{{mydata.user.username}}</b> ({{mydata.user.name}}) </h5>
+      <p class="card-text">Your Registered Email Is id <b> {{mydata.user.email}}</b></p>
+      <p class="card-text">You Have A total of <b>{{numofarticles}} articles</b></p>
+      
+    </div>
+  <div class="row justify-content-around">
+    <div class="col-3">
+      <button (click)='gotopublish()' class="btn btn-primary">Publish a Blog</button>
+   
+    </div>
+    <div class="col-3">
+         <button class="btn btn-success" (click)='myarticles()'>See Your Articles</button>
+     
+    </div>
+    <div class="col-3">
+       <button class="btn btn-info" (click)='gotosaved()'>Saved Articles</button>
+    </div>
+  </div>
+  </div>
+</div>
